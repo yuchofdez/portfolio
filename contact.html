@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../sass/blog.css">
+    <link rel="stylesheet" href="../sass/contact.css">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="../css/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header" data-aos="fade">
+        <div class="box-header">
+            <h1 class="header-logo">
+                <img src="../image/【最終課題】 ブログ詳細（SP版）/極楽亭ロゴ-1.png" alt="極楽亭">
+            </h1>
+            <button class="nav-btn" type="button" id="nav-btn" aria-label="メニュー"><span></span><span></span><span></span></button>
+        </div>
+        <div class="header-nav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html">ホーム</a></li>
+                    <li class="nav-item"><a href="/html/blog.html">ブログ</a></li>
+                    <li class="nav-item"><a href="/html/contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/index.html">ホーム</a></li>
+                    <li class="nav-item"><a href="./blog.html">ブログ</a></li>
+                    <li class="nav-item"><a href="./contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="section-wrapper">
+                <div class="blog-image"><img src="../image/【最終課題】ブログ一覧/street-409993_1920.png" alt=""></div>
+                <div class="blog-image-sp"><img src="../image/【最終課題】 ブログ一覧（SP版）/street-409993_1920.png" alt=""></div>
+                <h2 class="section-title" data-aos="fade">お問い合わせ</h2>
+                <p class="sub-title" data-aos="fade">Contact</p>
+                <div class="contact-form">
+                    <form class="form">
+                        <dl class="form-dl">
+                            <div class="form-item">
+                                <dt><label for="company">会社名</label></dt>
+                                <dd><input type="text" placeholder="株式会社　京の極楽"/></dd>
+                            </div>
+                            <div class="form-item">
+                                <dt><label for="name">氏名</label></dt>
+                                <dd><input type="text" placeholder="山田　太郎"/></dd>
+                            </div>
+                            <div class="form-item">
+                                <dt><label for="mail">メールアドレス</label></dt>
+                                <dd><input type="email" placeholder="example@example.com"/></dd>
+                            </div>
+                            <div class="form-item">
+                                <dt><label for="number">電話番号</label></dt>
+                                <dd><input type="text" placeholder="000-1234–5678"/></dd>
+                            </div>
+                            <div class="contact-item">
+                                <dt><label for="contact">お問い合わせ内容</label></dt>
+                                <dd>
+                                <textarea class="textarea-box" placeholder="お問い合わせ内容を入力してください"></textarea>
+                                </dd>
+                            </div>
+                        </dl>
+                        <div class="privacy-policy">
+                            <p class="agree"><a href="#" class="link">プライバシーポリシー</a>に同意の上、送信ください。</p>
+                            <div class="checkbox">
+                                <div class="check"><input type="checkbox"/></div>
+                                <p>プライバシーポリシーに同意する</p>
+                            </div>
+                        </div>
+                        <div class="submit-btn"><input type="submit" value="送信する"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-nav">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/index.html">ホーム</a></li>
+                    <li class="nav-item"><a href="./blog.html">ブログ</a></li>
+                    <li class="nav-item"><a href="./contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="footer-logo"><img src="../image/【最終課題】ブログ詳細/極楽亭ロゴ.png" alt="極楽亭"></div>
+            <div class="copy">
+                <p>©︎Copyright 2021 極楽亭 All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/aos.js"></script>
+    </body>
+    </html>

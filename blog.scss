@@ -1,0 +1,111 @@
+$md: 767px;
+@mixin mobile{
+    @media screen and (max-width:$md){
+        @content;
+    }
+}
+body{
+    background-color: black;
+}
+.blog-page{
+    .section-wrapper{
+        .blog-image{
+            @include mobile{
+                display: none;
+            }
+            img{
+                padding-top: 70px;
+                width: 100%;
+            }
+        }
+        .blog-image-sp{
+            display: none;
+            @include mobile{
+                display: block;
+            }
+            img{
+                padding-top: 70px;
+                width: 100%;
+            }
+        }
+        .inner-blog{
+            margin-left: 67px;
+            margin-right: 67px;
+            @include mobile{
+                margin-left: unset;
+                margin-right: unset;
+                
+            }
+            ul{
+                li{
+                    // margin-bottom: 50px;
+                    a{
+                        display: flex;
+                        margin-bottom: 50px;
+                        text-decoration: none;
+                        @include mobile{
+                            display: block;
+                        }
+                        .blog-box{
+                            position: relative;
+                            @include mobile{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                            }
+                            .image{
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .blog-category{
+                                color: white;
+                                position: absolute;
+                                width: 157px;
+                                background-color: #4D0000;
+                                color: white;
+                                text-align: center;
+                                font-size: 14px;
+                                height: 30px;
+                                line-height: 30px;
+                                top: 0;
+                                left: 0;
+                                display: inline-block;
+                                z-index: 1;
+                            }
+                        }
+                        .blog-text{
+                            margin-left: 20px;
+                            color: white;
+                            @include mobile{
+                                margin-left: 10%;
+                                margin-right: 10%;
+                            }
+                            .date{
+                                font-size: 16px;
+
+                            }
+                            .title{
+                                font-size: 24px;
+                                text-decoration: underline;
+                                text-decoration-color: white;
+                                @include mobile{
+                                    font-size: 22px;
+                                }
+
+                            }
+                            .text{
+                                font-size: 22px;
+                                @include mobile{
+                                    font-size: 18px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
